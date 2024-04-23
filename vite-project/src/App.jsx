@@ -1,27 +1,49 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react';
-import Navbar from './components/Navbar';
-import Welcome from './pages/Welcome';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Layout from './components/Layout';
+import React from "react";
+import "./App.css";
+
+const Header = () => {
+    return (
+        <header>
+            <h1>Berkeley Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    );
+};
+
+const BlogPost = ({ title, content }) => {
+    return (
+        <article>
+            <h2>{title}</h2>
+            <p>{content}</p>
+        </article>
+    );
+};
+
+const Footer = () => {
+    return (
+        <footer>
+            <p>Copyright © 2023 Berkeley Blog. All rights reserved.</p>
+        </footer>
+    );
+};
 
 const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout><Welcome /></Layout>} />
-        <Route path="/signin" element={<Layout><SignIn /></Layout>} />
-        <Route path="/signup" element={<Layout><SignUp /></Layout>} />
-        <Route path="/home" element={<Layout showNavbar={true}><Home /></Layout>} />
-        <Route path="/about" element={<Layout showNavbar={true}><About /></Layout>} />
-        <Route path="/contact" element={<Layout showNavbar={true}><Contact /></Layout>} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <div className="app">
+            <Header />
+            <main>
+                <BlogPost title="Welcome to Berkeley Blog" content="This is your first post on the Berkeley Blog." />
+                {/* Add more <BlogPost /> components as needed */}
+            </main>
+            <Footer />
+        </div>
+    );
 };
 
 export default App;
