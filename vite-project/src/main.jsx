@@ -13,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/" element={<App />}> {/* App should be the layout that wraps around the pages */}
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
