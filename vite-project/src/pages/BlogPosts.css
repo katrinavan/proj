@@ -1,0 +1,11 @@
+/* Styles for the article element */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 20px;
+}
