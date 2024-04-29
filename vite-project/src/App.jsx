@@ -14,41 +14,41 @@ const router = createBrowserRouter([
     {
         path:"/",
         element:(
-            <>
+            <div className="mb-100">
                 <Header/>
                 <Welcome/>
                 <Footer/>
-            </>
+            </div>
         )
     },
     {
         path:"/welcome",
         element:(
-            <>
+            <div className="mb-100">
                 <Header/>
                 <Welcome/>
                 <Footer/>
-            </>
+            </div>
         )
     },
     {
         path:"/about",
         element:(
-            <>
+            <div className="mb-100">
                 <Header/>
                 <About/>
                 <Footer/>
-            </>
+            </div>
         )
     },
     {
         path:"/signin",
         element:(
-            <>
+            <div className="mb-100">
                 <Header/>
-                <SignIn/>
+                <About/>
                 <Footer/>
-            </>
+            </div>
         )
     },
     {
@@ -64,11 +64,11 @@ const router = createBrowserRouter([
     {
         path:"/blogposts",
         element:(
-            <>
+            <div className="mb-100">
                 <Header/>
                 <BlogPosts/>
                 <Footer/>
-            </>
+            </div>
         )
     },
 ])
