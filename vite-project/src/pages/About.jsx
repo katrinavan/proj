@@ -41,6 +41,9 @@ const About = () => {
           </div>
         </div>
     </div>
+    <div className="h-100">
+      <p><br/><br/></p>
+    </div>
   </div>);
 };
 

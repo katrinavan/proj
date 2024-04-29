@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     {
         path:"/about",
         element:(
-            <div className="mb-100">
+            <div className="mb-100 pb-100">
                 <Header/>
                 <About/>
                 <Footer/>
