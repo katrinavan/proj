@@ -1,0 +1,24 @@
+/* QnA.css */
+.qna-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .qna-item {
+    margin-bottom: 30px;
+  }
+  
+  .qna-item h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .qna-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+  }
+  
