@@ -4,9 +4,7 @@ import BlogPost from "./components/BlogPost"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home"
 import About from "./pages/About"
-import Contact from "./pages/Contact"
 import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp"
 import Welcome from "./pages/Welcome"
@@ -29,16 +27,6 @@ const router = createBrowserRouter([
             <>
                 <Header/>
                 <Welcome/>
-                <Footer/>
-            </>
-        )
-    },
-    {
-        path:"/home",
-        element:(
-            <>
-                <Header/>
-                <Home/>
                 <Footer/>
             </>
         )
@@ -82,7 +70,7 @@ const router = createBrowserRouter([
                 <Footer/>
             </>
         )
-    }
+    },
 ])
 
 const App = () => {
