@@ -25,7 +25,7 @@ const SignIn = () => {
       const data = await response.json();
 
       if (response.status === 200) {
-        navigate('/home');
+        navigate('/blogposts');
       } else {
         setErrorMessage('Incorrect email/password');
       }
