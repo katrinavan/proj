@@ -27,7 +27,7 @@ const SignUp = () => {
 
       if (response.status === 200) {
         console.log('Signup successful', data);
-        navigate('/home');
+        navigate('/blogposts');
       } else {
         setErrorMessage(data.message || 'Failed to sign up');
       }
